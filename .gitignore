@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+src/.DS_Store
+src/fonts/.DS_Store
+src/images/.DS_Store
+.DS_Store
