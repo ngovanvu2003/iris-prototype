@@ -636,6 +636,10 @@ video {
   right: 0px;
 }
 
+.top-\[67\%\] {
+  top: 67%;
+}
+
 .z-10 {
   z-index: 10;
 }
