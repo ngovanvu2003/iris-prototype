@@ -12,7 +12,7 @@ module.exports = {
                 Playfair: ["Playfair"],
             },
             fontSize: {
-                "10xl": "15rem",
+                "10xl": "14rem",
             },
         },
     },
