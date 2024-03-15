@@ -119,6 +119,10 @@ $(jQuery).ready(function () {
                     slidesPerView: 1,
                     spaceBetween: 0,
                 },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
                 768: {
                     slidesPerView: 3,
                     spaceBetween: 30,
