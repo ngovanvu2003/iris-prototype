@@ -123,7 +123,7 @@
         <!--End .banner-->
         <section class="feature-category lg:mt-[80px]">
             <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="font-Playfair text-center pt-5 pb-3 lg:py-4 mb-1">
+                <div class="relative font-Playfair text-center pt-5 pb-3 lg:py-4 mb-1">
                     <h2>
                         <span
                             class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
@@ -134,10 +134,90 @@
                             >Sản phẩm</span
                         >
                     </h2>
+                    <div
+                        class="hidden absolute lg:flex items-center justify-end top-1/2 right-0 -translate-y-1/2"
+                    >
+                        <div class="swiper-button-prev feature-category-prev relative">
+                            <img src="./images/icons/arrow-slide-left.svg" />
+                        </div>
+                        <div class="swiper-button-next feature-category-next relative">
+                            <img src="./images/icons/arrow-slide-right.svg" />
+                        </div>
+                    </div>
                 </div>
                 <div class="section-body">
-                    <div class="swiper feature-category-slides">
-                        <div class="swiper-wrapper">
+                    <div class="swiper feature-category-slides relative">
+                        <div class="swiper-wrapper pt-3">
+                            <div class="swiper-slide">
+                                <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4">
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/1.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Ghế Ăn</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/2.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Bàn Trà</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/3.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Kệ Tivi</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/4.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Tủ Giày</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/5.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Ghế Sofa</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="feature-category__img">
+                                            <img
+                                                srcset="./images/products/6.jpg 2x"
+                                                alt=""
+                                                class="w-full"
+                                            />
+                                        </div>
+                                        <h3 class="feature-category__name">Bàn Ăn</h3>
+                                        <a href="" class="feature-category__link 2x"></a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide">
                                 <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4">
                                     <div class="text-center">
@@ -209,8 +289,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next feature-category-next"></div>
-                        <div class="swiper-button-prev feature-category-prev"></div>
+                    </div>
+                    <div class="flex lg:hidden items-center justify-center mt-10">
+                        <div class="swiper-button-prev feature-category-prev relative">
+                            <img src="./images/icons/arrow-slide-left.svg" />
+                        </div>
+                        <div class="swiper-button-next feature-category-next relative">
+                            <img src="./images/icons/arrow-slide-right.svg" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,13 +384,116 @@
                                     />
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="tab-content" data-tab-id="tab2">Content tab 2</div>
-                    <div class="tab-content" data-tab-id="tab3">Content tab 3</div>
-                    <div class="tab-content" data-tab-id="tab4">Content tab 3</div>
-                    <div class="tab-content" data-tab-id="tab5">Content tab 3</div>
+                    <div class="tab-content" data-tab-id="tab2">
+                        <div class="swiper room-space-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab-id="tab3">
+                        <div class="swiper room-space-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab-id="tab4">
+                        <div class="swiper room-space-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab-id="tab5">
+                        <div class="swiper room-space-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        srcset="./images/banner2.jpg 2x"
+                                        class="img-fluid lg:h-[740px]"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper room-space-slide-2 bg-[#ba9b63]">
                     <div class="swiper-wrapper">
@@ -1156,12 +1345,12 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-[#121F29] text-white py-10">
+        <footer class="bg-[#121F29] text-white py-10 lg:pt-[67px]">
             <div class="max-w-screen-1xl mx-auto px-4">
                 <div class="grid lg:grid-cols-12 gap-0">
                     <div class="lg:col-span-3">
                         <div class="grid gap-6 grid-flow-col lg:grid-flow-row">
-                            <p class="order-2 lg:order-1">
+                            <p class="order-2 lg:order-1 font-SFPro text-lg leading-[22px]">
                                 <strong>IRIS</strong> với sứ mệnh không ngừng mang những
                                 <strong><em>sản phẩm nội thất luxury</em></strong> đang được ưa
                                 chuộng trên thị trường quốc tế về Việt Nam
@@ -1171,7 +1360,7 @@
                             </div>
                         </div>
 
-                        <div class="my-3 flex space-x-4 justify-center lg:justify-start">
+                        <div class="my-3 flex space-x-6 mt-10 justify-center lg:justify-start">
                             <a href=""><img src="./images/socials/Facebook.svg" /></a>
                             <a href=""><img src="./images/socials/instagram.svg" /></a>
                             <a href=""><img src="./images/socials/twitter.svg" /></a>
@@ -1180,7 +1369,7 @@
                             <a href=""><img src="./images/socials/dribbble.svg" /></a>
                         </div>
                     </div>
-                    <div class="lg:col-span-5 lg:col-start-5 grid grid-cols-3 gap-4 lg:pr-5¡">
+                    <div class="lg:col-span-5 lg:col-start-5 grid grid-cols-3 gap-4 lg:pr-20">
                         <div>
                             <div><h2 class="font-berling">NỘI THẤT</h2></div>
                             <ul class="text-sm flex flex-col space-y-2 mt-3">
@@ -1201,31 +1390,58 @@
                             <div><h2 class="font-berling">HỖ TRỢ</h2></div>
                             <ul class="text-sm flex flex-col space-y-2 mt-3">
                                 <li>
-                                    <a href="" class="hover:underline">Đặt hàng & Thanh toán</a>
+                                    <a href="" class="hover:underline lg:whitespace-nowrap"
+                                        >Đặt hàng & Thanh toán</a
+                                    >
                                 </li>
                                 <li>
-                                    <a href="" class="hover:underline">Vận chuyển & Giao hàng</a>
+                                    <a href="" class="hover:underline lg:whitespace-nowrap"
+                                        >Vận chuyển & Giao hàng</a
+                                    >
                                 </li>
-                                <li><a href="" class="hover:underline">Dịch vụ bảo hành</a></li>
-                                <li><a href="" class="hover:underline">Các chính sách</a></li>
+                                <li>
+                                    <a href="" class="hover:underline lg:whitespace-nowrap"
+                                        >Dịch vụ bảo hành</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="" class="hover:underline lg:whitespace-nowrap"
+                                        >Các chính sách</a
+                                    >
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="lg:col-span-3">
                         <h2 class="font-berling">ĐĂNG KÝ</h2>
-                        <p class="text-[14px]">
+                        <p class="text-[14px] mt-3 lg:whitespace-nowrap">
                             Đăng ký email để nhận thông tin khuyến mãi từ chúng tôi
                         </p>
-                        <form action="" class="border-b border-gray-100 pb-3 mt-2">
-                            <input type="text" placeholder="Email của bạn" class="bg-transparent" />
-                            <button>Submit</button>
+                        <form
+                            action=""
+                            class="border-b border-gray-100 pb-3 mt-3 mb-9 flex items-center"
+                        >
+                            <input
+                                type="text"
+                                placeholder="Email của bạn"
+                                class="bg-transparent w-full outline-none placeholder:text-[#434E58]"
+                            />
+                            <button>
+                                <img src="./images/icons/arrow-right.svg" />
+                            </button>
                         </form>
-                        <p>090 486 3155 | CSKH: 097 250 6486</p>
-                        <p><img src="./images/icons/email.svg" />info@iris-furniture.com</p>
+                        <p class="flex items-center text-sm space-x-1 my-2">
+                            <img src="./images/icons/phone.svg" width="16" />
+                            <span>090 486 3155 | CSKH: 097 250 6486</span>
+                        </p>
+                        <p class="flex items-center text-sm space-x-1">
+                            <img src="./images/icons/email.svg" width="16" />
+                            <span>info@iris-furniture.com</span>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-[#BA9B63] pt-5">
+            <div class="border-t border-[#BA9B63] pt-5 mt-[45px]">
                 <div class="max-w-screen-1xl mx-auto px-4">
                     <div class="flex items-center">
                         <p class="mb-0 flex-1">© 2023 Bản quyền thuộc về Nội thất IRIS</p>
