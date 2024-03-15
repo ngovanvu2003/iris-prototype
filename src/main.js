@@ -16,6 +16,17 @@ $(jQuery).ready(function () {
             },
         });
     }
+    if ($(".feature-category-slides").length > 0) {
+        new Swiper(".feature-category-slides", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            preventInteractionOnTransition: false,
+            navigation: {
+                nextEl: ".feature-category-next",
+                prevEl: ".feature-category-prev",
+            },
+        });
+    }
     if ($("#room-space-tabs").length > 0) {
         // Ẩn tất cả nội dung tab ngoại trừ tab đầu tiên
         $(".tab-content").not(":first").hide(); // Ẩn tất cả các nội dung tab, ngoại trừ tab đầu tiên
@@ -85,13 +96,33 @@ $(jQuery).ready(function () {
     if ($(".partners-swiper").length > 0) {
         new Swiper(".partners-swiper", {
             slidesPerView: "auto",
-            spaceBetween: 25,
             autoplay: {
                 delay: 3000,
             },
             loop: true,
             pagination: {
                 clickable: true,
+            },
+        });
+    }
+
+    if ($(".trending-slides").length > 0) {
+        new Swiper(".trending-slides", {
+            slidesPerView: 1,
+            loop: true,
+        });
+    }
+    if ($(".project-slides").length > 0) {
+        new Swiper(".project-slides", {
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
         });
     }
