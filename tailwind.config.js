@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content: ["index.html", "./src/**/*.{html,js}"],
     theme: {
         extend: {
             screens: {
@@ -12,7 +12,7 @@ module.exports = {
                 Playfair: ["Playfair"],
             },
             fontSize: {
-                "10xl": "15rem",
+                "10xl": "14rem",
             },
         },
     },
