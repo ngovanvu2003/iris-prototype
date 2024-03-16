@@ -1,1253 +1,1307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-            rel="stylesheet"
-        />
-        <!-- <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         /> -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="./main.css" /> -->
+  </head>
+  <body>
+    <div class="bg-[#ba9b63] px-4">
+      <div class="tw-container-fluid">
+        <div class="flex justify-between items-center text-white py-3 lg:py-2">
+          <div class="flex-1 text-sm hidden lg:flex items-center space-x-1">
+            <img src="./images/icons/phone.svg" /> <span>090 486 3155</span>
+          </div>
+          <p
+            class="flex-1 text-center text-[10px] lg:text-[12px] m-0 uppercase tracking-[2px]"
+          >
+            MIỄN PHÍ GIAO HÀNG VỚI ĐƠN TỪ 3.000.000 VNĐ
+          </p>
+          <div class="lighthouse__lang flex-1 text-right hidden lg:block">
+            <span>Tiếng Việt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="md:absolute top-[50px] z-10 w-full py-2">
+      <div class="max-w-screen-1xl mx-auto px-4">
+        <div class="flex justify-between">
+          <ul class="flex-1 hidden lg:flex items-center space-x-4 text-white">
+            <li class="nav-item">
+              <a class="nav-link text-sm" href="products-page.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-sm" href="#">Không gian nội thất</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-sm" href="#">Bộ sưu tập</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-sm" href="#">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-sm" href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <div
+            class="flex-1 flex lg:justify-center items-center pt-2 pb-1 lg:py-0"
+          >
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 800px)" srcset="./images/logo.svg" />
+                <img src="./images/logo-mobile.svg" alt="" />
+              </picture>
+            </a>
+          </div>
+          <div class="flex-1 hidden lg:flex items-center justify-end space-x-4">
+            <form
+              class="flex justify-end items-center border-b border-[#E5E5E5] pb-1"
+              role="search"
+            >
+              <button class="btn btn-outline-success" type="submit">
+                <img src="./images/icons/search.svg" alt="" />
+              </button>
+              <input
+                class="bg-transparent outline-none px-2 text-white text-sm w-[245px]"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <div class="flex items-center space-x-[25px]">
+              <button>
+                <img src="./images/icons/heart.svg" alt="" />
+              </button>
+              <button>
+                <img src="./images/icons/cart.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="relative">
+      <div class="banner-item">
+        <img
+          srcset="./images/banner.jpg 2x"
+          alt=""
+          class="object-center h-[220px] md:h-auto lg:h-[940px] w-full"
         />
-        <link rel="stylesheet" href="./output.css" />
-        <!-- <link rel="stylesheet" href="./main.css" /> -->
-    </head>
-    <body>
-        <div class="bg-[#ba9b63] px-4">
-            <div class="tw-container-fluid">
-                <div class="flex justify-between items-center text-white py-3 lg:py-2">
-                    <div class="flex-1 text-sm hidden lg:flex items-center space-x-1">
-                        <img src="./images/icons/phone.svg" /> <span>090 486 3155</span>
-                    </div>
-                    <p
-                        class="flex-1 text-center text-[10px] lg:text-[12px] m-0 uppercase tracking-[2px]"
-                    >
-                        MIỄN PHÍ GIAO HÀNG VỚI ĐƠN TỪ 3.000.000 VNĐ
-                    </p>
-                    <div class="lighthouse__lang flex-1 text-right hidden lg:block">
-                        <span>Tiếng Việt</span>
-                    </div>
-                </div>
-            </div>
+        <div class="banner__content">
+          <h2
+            class="banner__title -tracking-[2px] leading-[33px] text-[36px] lg:text-[128px] lg:leading-[114px] lg:-tracking-[7px]"
+          >
+            Bring your <br />modern design <br />FUNITURES
+          </h2>
+          <a
+            href=""
+            class="text-white no-underline uppercase font-bold text-[10px] lg:text-[14px] font-SFPro tracking-[0.7px] mt-[5px]"
+          >
+            get started
+          </a>
         </div>
-        <nav class="md:absolute top-[50px] z-10 w-full py-2">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="flex justify-between">
-                    <ul class="flex-1 hidden lg:flex items-center space-x-4 text-white">
-                        <li class="nav-item">
-                            <a class="nav-link text-sm" href="#">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-sm" href="#">Không gian nội thất</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-sm" href="#">Bộ sưu tập</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-sm" href="#">Về chúng tôi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-sm" href="#">Liên hệ</a>
-                        </li>
-                    </ul>
-                    <div class="flex-1 flex lg:justify-center items-center pt-2 pb-1 lg:py-0">
-                        <a href="">
-                            <picture>
-                                <source media="(min-width: 800px)" srcset="./images/logo.svg" />
-                                <img src="./images/logo-mobile.svg" alt="" />
-                            </picture>
-                        </a>
+      </div>
+    </section>
+    <!--End .banner-->
+    <section class="feature-category lg:mt-[80px]">
+      <div class="max-w-screen-1xl mx-auto px-4">
+        <div class="font-Playfair text-center pt-5 pb-3 lg:py-4 mb-1">
+          <h2>
+            <span
+              class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
+              >Danh mục
+            </span>
+            <span
+              class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Sản phẩm</span
+            >
+          </h2>
+        </div>
+        <div class="section-body">
+          <div class="swiper feature-category-slides">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4">
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/1.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
                     </div>
-                    <div class="flex-1 hidden lg:flex items-center justify-end space-x-4">
-                        <form
-                            class="flex justify-end items-center border-b border-[#E5E5E5] pb-1"
-                            role="search"
-                        >
-                            <button class="btn btn-outline-success" type="submit">
-                                <img src="./images/icons/search.svg" alt="" />
-                            </button>
-                            <input
-                                class="bg-transparent outline-none px-2 text-white text-sm w-[245px]"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                        </form>
-                        <div class="flex items-center space-x-[25px]">
-                            <button>
-                                <img src="./images/icons/heart.svg" alt="" />
-                            </button>
-                            <button>
-                                <img src="./images/icons/cart.svg" alt="" />
-                            </button>
-                        </div>
+                    <h3 class="feature-category__name">Ghế Ăn</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/2.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
                     </div>
+                    <h3 class="feature-category__name">Bàn Trà</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/3.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
+                    </div>
+                    <h3 class="feature-category__name">Kệ Tivi</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/4.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
+                    </div>
+                    <h3 class="feature-category__name">Tủ Giày</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/5.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
+                    </div>
+                    <h3 class="feature-category__name">Ghế Sofa</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
+                  <div class="text-center">
+                    <div class="feature-category__img">
+                      <img
+                        srcset="./images/products/6.jpg 2x"
+                        alt=""
+                        class="w-full"
+                      />
+                    </div>
+                    <h3 class="feature-category__name">Bàn Ăn</h3>
+                    <a href="" class="feature-category__link 2x"></a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </nav>
-        <section class="relative">
-            <div class="banner-item">
-                <img
-                    srcset="./images/banner.jpg 2x"
+            <div class="swiper-button-next feature-category-next"></div>
+            <div class="swiper-button-prev feature-category-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End .feature-category-->
+    <section class="room-space mt-12 lg:mt-[65px]">
+      <div class="font-Playfair text-center py-4">
+        <h2 class="mb-4 lg:mb-7">
+          <span
+            class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+            >Không gian phòng</span
+          >
+          <span
+            class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
+            >nội thất</span
+          >
+        </h2>
+        <div class="overflow-hidden">
+          <ul
+            id="room-space-tabs"
+            class="nav room-space-tab flex justify-start space-x-4 overflow-auto whitespace-nowrap pb-7 pl-2 lg:pl-0 lg:justify-center lg:space-x-11"
+          >
+            <li class="nav-item room-space-tabs__item">
+              <a
+                class="font-SFPro lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63] active"
+                aria-current="page"
+                data-id="tab1"
+                >Phòng Khách</a
+              >
+            </li>
+            <li class="nav-item room-space-tabs__item">
+              <a
+                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
+                data-id="tab2"
+                >Phòng Bếp</a
+              >
+            </li>
+            <li class="nav-item room-space-tabs__item">
+              <a
+                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
+                data-id="tab3"
+                >Phòng Ngủ</a
+              >
+            </li>
+            <li class="nav-item room-space-tabs__item">
+              <a
+                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
+                data-id="tab4"
+                >Phòng Làm Việc</a
+              >
+            </li>
+            <li class="nav-item room-space-tabs__item">
+              <a
+                class="nav-link font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
+                data-id="tab5"
+                >Không Gian Khác</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="room-space-tab-content mb-6">
+          <div class="tab-content" data-tab-id="tab1">
+            <div class="swiper room-space-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    srcset="./images/banner2.jpg 2x"
+                    class="img-fluid lg:h-[740px]"
                     alt=""
-                    class="object-center h-[220px] md:h-auto lg:h-[940px] w-full"
-                />
-                <div class="banner__content">
-                    <h2
-                        class="banner__title -tracking-[2px] leading-[33px] text-[36px] lg:text-[128px] lg:leading-[114px] lg:-tracking-[7px]"
-                    >
-                        Bring your <br />modern design <br />FUNITURES
-                    </h2>
-                    <a
-                        href=""
-                        class="text-white no-underline uppercase font-bold text-[10px] lg:text-[14px] font-SFPro tracking-[0.7px] mt-[5px]"
-                    >
-                        get started
-                    </a>
+                  />
                 </div>
+                <div class="swiper-slide">
+                  <img
+                    srcset="./images/banner2.jpg 2x"
+                    class="img-fluid lg:h-[740px]"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    srcset="./images/banner2.jpg 2x"
+                    class="img-fluid lg:h-[740px]"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-        </section>
-        <!--End .banner-->
-        <section class="feature-category lg:mt-[80px]">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="font-Playfair text-center pt-5 pb-3 lg:py-4 mb-1">
-                    <h2>
-                        <span
-                            class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
-                            >Danh mục
-                        </span>
-                        <span
-                            class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Sản phẩm</span
-                        >
-                    </h2>
-                </div>
-                <div class="section-body">
-                    <div class="swiper feature-category-slides">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4">
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/1.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Ghế Ăn</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/2.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Bàn Trà</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/3.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Kệ Tivi</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/4.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Tủ Giày</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/5.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Ghế Sofa</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="feature-category__img">
-                                            <img
-                                                srcset="./images/products/6.jpg 2x"
-                                                alt=""
-                                                class="w-full"
-                                            />
-                                        </div>
-                                        <h3 class="feature-category__name">Bàn Ăn</h3>
-                                        <a href="" class="feature-category__link 2x"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next feature-category-next"></div>
-                        <div class="swiper-button-prev feature-category-prev"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End .feature-category-->
-        <section class="room-space mt-12 lg:mt-[65px]">
-            <div class="font-Playfair text-center py-4">
-                <h2 class="mb-4 lg:mb-7">
-                    <span
-                        class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                        >Không gian phòng</span
-                    >
-                    <span class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
-                        >nội thất</span
-                    >
-                </h2>
-                <div class="overflow-hidden">
-                    <ul
-                        id="room-space-tabs"
-                        class="nav room-space-tab flex justify-start space-x-4 overflow-auto whitespace-nowrap pb-7 pl-2 lg:pl-0 lg:justify-centerlg:space-x-11"
-                    >
-                        <li class="nav-item room-space-tabs__item">
-                            <a
-                                class="font-SFPro lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63] active"
-                                aria-current="page"
-                                data-id="tab1"
-                                >Phòng Khách</a
-                            >
-                        </li>
-                        <li class="nav-item room-space-tabs__item">
-                            <a
-                                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                                data-id="tab2"
-                                >Phòng Bếp</a
-                            >
-                        </li>
-                        <li class="nav-item room-space-tabs__item">
-                            <a
-                                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                                data-id="tab3"
-                                >Phòng Ngủ</a
-                            >
-                        </li>
-                        <li class="nav-item room-space-tabs__item">
-                            <a
-                                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                                data-id="tab4"
-                                >Phòng Làm Việc</a
-                            >
-                        </li>
-                        <li class="nav-item room-space-tabs__item">
-                            <a
-                                class="nav-link font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                                data-id="tab5"
-                                >Không Gian Khác</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section-body">
-                <div class="room-space-tab-content mb-6">
-                    <div class="tab-content" data-tab-id="tab1">
-                        <div class="swiper room-space-slide">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img
-                                        srcset="./images/banner2.jpg 2x"
-                                        class="img-fluid lg:h-[740px]"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        srcset="./images/banner2.jpg 2x"
-                                        class="img-fluid lg:h-[740px]"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        srcset="./images/banner2.jpg 2x"
-                                        class="img-fluid lg:h-[740px]"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                    <div class="tab-content" data-tab-id="tab2">Content tab 2</div>
-                    <div class="tab-content" data-tab-id="tab3">Content tab 3</div>
-                    <div class="tab-content" data-tab-id="tab4">Content tab 3</div>
-                    <div class="tab-content" data-tab-id="tab5">Content tab 3</div>
-                </div>
-                <div class="swiper room-space-slide-2 bg-[#ba9b63]">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide lg:h-[740px]">
-                            <div class="pt-12 lg:pt-[94px] md:max-w-[490px] px-8 lg:px-5 mx-auto">
-                                <h2
-                                    class="font-berling text-2xl lg:text-[36px] text-[#1f1f1f] italic text-center leading-none"
-                                >
-                                    Bộ bàn ăn <span class="text-white">Sunny Table</span>
-                                </h2>
-                                <h3
-                                    class="font-berling text-2xl lg:text-[28px] text-[#1f1f1f] italic text-center"
-                                >
-                                    Tinh tế đến từ phong cách cổ điển
-                                </h3>
-                                <p
-                                    class="mt-1 mb-6 lg:mt-3 lg:mb-5 leading-tight text-[14px] lg:text-[16px]"
-                                >
-                                    Sunny Table là sự kết hợp hài hòa giữa hình thức và chức năng.
-                                    Tựa lưng cong nâng niu điểm chạm từ các phía, bề mặt ngồi thoải
-                                    mái, cả hai đều có kết cấu kim loại bọc bên ngoài một lớp mút
-                                    polyurethane.
-                                </p>
-                                <ul
-                                    class="text-md list-disc mb-4 lg:columns-2 lg:text-lg lg:list-inside"
-                                >
-                                    <li>Chất liệu êm</li>
-                                    <li>Phong cách sang trọng</li>
-                                    <li>Thân thiện môi trường</li>
-                                    <li>Thoáng mát</li>
-                                </ul>
-                                <img srcset="./images/products/7.png 2x" alt="" class="mx-auto" />
-                            </div>
-                        </div>
-                        <div class="swiper-slide lg:h-[740px]">
-                            <img
-                                srcset="./images/products/11.jpg 2x"
-                                class="mx-auto object-cover h-full"
-                                alt=""
-                            />
-                        </div>
-                        <div class="swiper-slide lg:h-[740px] pt-[30px] p-8">
-                            <div class="text-center mb-8">
-                                <img srcset="./images/products/8.png 2x" alt="" class="mx-auto" />
-                                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
-                            </div>
-                            <div class="text-center mb-8">
-                                <img srcset="./images/products/9.png 2x" alt="" class="mx-auto" />
-                                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
-                            </div>
-                            <div class="text-center">
-                                <img srcset="./images/products/10.png 2x" alt="" class="mx-auto" />
-                                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-        <section class="best-selling mt-[60px] lg:mt-[74px]">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="font-Playfair text-center py-4">
-                    <h2 class="mb-4">
-                        <span
-                            class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Sản phẩm</span
-                        >
-                        <span
-                            class="text-xl lg:text-[36px] text-[#ba9b63] font-[500] tracking-[1px]"
-                            >Bán chạy</span
-                        >
-                    </h2>
-                </div>
-                <div>
-                    <div class="swiper best-selling-slide pb-8 mb-5 hidden md:block">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/12.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/13.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/14.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/12.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/16.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/17.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/18.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/19.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="grid grid-cols-4 gap-8">
-                                    <div class="product-item text-center">
-                                        <img src="./images/products/12.png" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img src="./images/products/12.png" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img src="./images/products/12.png" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img src="./images/products/12.png" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-scrollbar"></div>
-                    </div>
-                    <div class="swiper best-selling-slide pb-5 lg:pb-20 block md:hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/12.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/13.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/14.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/12.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/16.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/17.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/18.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-item text-center">
-                                        <img srcset="./images/products/19.png 2x" />
-                                        <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
-                                            <a href="">Ghế ăn cao cấp Matt</a>
-                                        </h3>
-                                        <div class="mt-2 flex space-x-4 justify-center">
-                                            <span class="font-SFPro text-[#1F1F1F]"
-                                                >4,920,000₫</span
-                                            >
-                                            <span class="font-SFPro text-[#9CA4AB] line-through"
-                                                >5,800,000₫</span
-                                            >
-                                        </div>
-                                        <div
-                                            class="flex justify-center items-center space-x-1.5 mt-3"
-                                        >
-                                            <div class="attribute-item bg-[#BC8A40]"></div>
-                                            <div class="attribute-item bg-[#C5B7A3]"></div>
-                                            <div class="attribute-item bg-[#737272]"></div>
-                                            <div class="attribute-item bg-[#0F2944]"></div>
-                                            <span class="text-[#9CA4AB]">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-scrollbar"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End .room-space-->
-        <div class="partners mb-[25px]">
-            <div class="swiper partners-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/1.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/2.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/3.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/4.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/5.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/6.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/7.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/8.png 2x" alt="" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img srcset="./images/partners/9.png 2x" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="tab-content" data-tab-id="tab2">Content tab 2</div>
+          <div class="tab-content" data-tab-id="tab3">Content tab 3</div>
+          <div class="tab-content" data-tab-id="tab4">Content tab 3</div>
+          <div class="tab-content" data-tab-id="tab5">Content tab 3</div>
         </div>
-        <section class="video relative h-[230px] lg:h-[860px]">
-            <div class="video-container">
-                <!-- <video id="background-video" autoplay muted loop poster="./images/banner3.jpg">
+        <div class="swiper room-space-slide-2 bg-[#ba9b63]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg:h-[740px]">
+              <div
+                class="pt-12 lg:pt-[94px] md:max-w-[490px] px-8 lg:px-5 mx-auto"
+              >
+                <h2
+                  class="font-berling text-2xl lg:text-[36px] text-[#1f1f1f] italic text-center leading-none"
+                >
+                  Bộ bàn ăn <span class="text-white">Sunny Table</span>
+                </h2>
+                <h3
+                  class="font-berling text-2xl lg:text-[28px] text-[#1f1f1f] italic text-center"
+                >
+                  Tinh tế đến từ phong cách cổ điển
+                </h3>
+                <p
+                  class="mt-1 mb-6 lg:mt-3 lg:mb-5 leading-tight text-[14px] lg:text-[16px]"
+                >
+                  Sunny Table là sự kết hợp hài hòa giữa hình thức và chức năng.
+                  Tựa lưng cong nâng niu điểm chạm từ các phía, bề mặt ngồi
+                  thoải mái, cả hai đều có kết cấu kim loại bọc bên ngoài một
+                  lớp mút polyurethane.
+                </p>
+                <ul
+                  class="text-md list-disc mb-4 lg:columns-2 lg:text-lg lg:list-inside"
+                >
+                  <li>Chất liệu êm</li>
+                  <li>Phong cách sang trọng</li>
+                  <li>Thân thiện môi trường</li>
+                  <li>Thoáng mát</li>
+                </ul>
+                <img
+                  srcset="./images/products/7.png 2x"
+                  alt=""
+                  class="mx-auto"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide lg:h-[740px]">
+              <img
+                srcset="./images/products/11.jpg 2x"
+                class="mx-auto object-cover h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide lg:h-[740px] pt-[30px] p-8">
+              <div class="text-center mb-8">
+                <img
+                  srcset="./images/products/8.png 2x"
+                  alt=""
+                  class="mx-auto"
+                />
+                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
+              </div>
+              <div class="text-center mb-8">
+                <img
+                  srcset="./images/products/9.png 2x"
+                  alt=""
+                  class="mx-auto"
+                />
+                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
+              </div>
+              <div class="text-center">
+                <img
+                  srcset="./images/products/10.png 2x"
+                  alt=""
+                  class="mx-auto"
+                />
+                <h4><a href="">BỘ BÀN ĂN ANNIE</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="best-selling mt-[60px] lg:mt-[74px]">
+      <div class="max-w-screen-1xl mx-auto px-4">
+        <div class="font-Playfair text-center py-4">
+          <h2 class="mb-4">
+            <span
+              class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Sản phẩm</span
+            >
+            <span
+              class="text-xl lg:text-[36px] text-[#ba9b63] font-[500] tracking-[1px]"
+              >Bán chạy</span
+            >
+          </h2>
+        </div>
+        <div>
+          <div class="swiper best-selling-slide pb-8 mb-5 hidden md:block">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/12.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/13.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/14.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/12.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/16.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/17.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/18.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/19.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-4 gap-8">
+                  <div class="product-item text-center">
+                    <img src="./images/products/12.png" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img src="./images/products/12.png" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img src="./images/products/12.png" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img src="./images/products/12.png" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="swiper best-selling-slide pb-5 lg:pb-20 block md:hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/12.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/13.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/14.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/12.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/16.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/17.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/18.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                  <div class="product-item text-center">
+                    <img srcset="./images/products/19.png 2x" />
+                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                      <a href="">Ghế ăn cao cấp Matt</a>
+                    </h3>
+                    <div class="mt-2 flex space-x-4 justify-center">
+                      <span class="font-SFPro text-[#1F1F1F]">4,920,000₫</span>
+                      <span class="font-SFPro text-[#9CA4AB] line-through"
+                        >5,800,000₫</span
+                      >
+                    </div>
+                    <div
+                      class="flex justify-center items-center space-x-1.5 mt-3"
+                    >
+                      <div class="attribute-item bg-[#BC8A40]"></div>
+                      <div class="attribute-item bg-[#C5B7A3]"></div>
+                      <div class="attribute-item bg-[#737272]"></div>
+                      <div class="attribute-item bg-[#0F2944]"></div>
+                      <span class="text-[#9CA4AB]">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End .room-space-->
+    <div class="partners mb-[25px]">
+      <div class="swiper partners-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/1.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/2.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/3.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/4.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/5.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/6.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/7.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/8.png 2x" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img srcset="./images/partners/9.png 2x" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="video relative h-[230px] lg:h-[860px]">
+      <div class="video-container">
+        <!-- <video id="background-video" autoplay muted loop poster="./images/banner3.jpg">
                     <source
                         src="https://www.youtube.com/embed/dw3hGjrAq-A?si=dl5iRxH1vykQy301"
                         type="video/mp4"
                     />
                 </video> -->
-                <img src="./images/banner3.jpg" alt="" class="h-[230px] lg:h-[860px]" />
-            </div>
-            <h2
-                class="banner__title absolute left-1/2 -bottom-[6px] xl:-bottom-[60px] -translate-x-1/2 text-6xl md:text-9xl xl:text-10xl xl:leading-[240px] w-full"
+        <img src="./images/banner3.jpg" alt="" class="h-[230px] lg:h-[860px]" />
+      </div>
+      <h2
+        class="banner__title absolute left-1/2 -bottom-[6px] xl:-bottom-[60px] -translate-x-1/2 text-6xl md:text-9xl xl:text-10xl xl:leading-[240px] w-full"
+      >
+        YOUR HOME
+      </h2>
+      <button
+        id="play-button"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 lg:w-auto"
+      >
+        <img src="./images/icons/play.svg" alt="" />
+      </button>
+    </section>
+    <section
+      class="trending bg-[#F9F5F0] pt-[12px] pb-10 lg:pt-[45px] lg:h-[940px] lg:pb-0"
+    >
+      <div class="mx-auto px-4 lg:px-20">
+        <div class="font-Playfair text-center py-4">
+          <h2 class="mb-[5px]">
+            <span
+              class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Xu hướng</span
             >
-                YOUR HOME
-            </h2>
-            <button
-                id="play-button"
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 lg:w-auto"
+            <span
+              class="text-xl lg:text-[36px] text-[#ba9b63] font-[500] tracking-[1px]"
             >
-                <img src="./images/icons/play.svg" alt="" />
-            </button>
-        </section>
-        <section class="trending bg-[#F9F5F0] pt-[12px] pb-10 lg:pt-[45px] lg:h-[940px] lg:pb-0">
-            <div class="mx-auto px-4 lg:px-20">
-                <div class="font-Playfair text-center py-4">
-                    <h2 class="mb-[5px]">
-                        <span
-                            class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Xu hướng</span
-                        >
-                        <span
-                            class="text-xl lg:text-[36px] text-[#ba9b63] font-[500] tracking-[1px]"
-                        >
-                            Thế giới</span
-                        >
-                    </h2>
-                    <span class="font-SFPro">Định vị phong cách - mở góc khác biệt</span>
+              Thế giới</span
+            >
+          </h2>
+          <span class="font-SFPro">Định vị phong cách - mở góc khác biệt</span>
+        </div>
+        <div>
+          <div class="swiper trending-slides">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid lg:grid-cols-[auto,40%,auto] lg:h-[780px]">
+                  <div>
+                    <img
+                      srcset="./images/products/20.png 2x"
+                      class="w-3/4 lg:w-auto mx-auto lg:mr-auto"
+                    />
+                  </div>
+                  <div class="pt-4 lg:pt-[134px]">
+                    <ul
+                      class="text-center font-SFPro text-lg md:text-2xl lg:text-4xl text-[#1F1F1F] space-y-5"
+                    >
+                      <li>Những set Bàn Ăn ấn tượng</li>
+                      <li
+                        class="relative z-10 font-Playfair text-2xl md:text-3xl lg:text-5xl text-[#ba9b63] font-[500] tracking-[1px] lg:mb-[26px]"
+                      >
+                        Ghế Sofa Tối giản & Cổ điển
+                      </li>
+                      <li>Không gian Bếp</li>
+                      <li>Phòng Khách & Cách bài trí</li>
+                      <li>Giường ngủ & Tủ đầu giường</li>
+                      <li>Phòng làm việc</li>
+                    </ul>
+                  </div>
+                  <div class="hidden lg:block self-end mb-10">
+                    <img
+                      srcset="./images/products/21.png 2x"
+                      alt=""
+                      class="mx-auto lg:ml-auto"
+                    />
+                  </div>
                 </div>
-                <div>
-                    <div class="swiper trending-slides">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="grid lg:grid-cols-[auto,40%,auto] lg:h-[780px]">
-                                    <div>
-                                        <img
-                                            srcset="./images/products/20.png 2x"
-                                            class="w-3/4 lg:w-auto mx-auto lg:mr-auto"
-                                        />
-                                    </div>
-                                    <div class="pt-4 lg:pt-[134px]">
-                                        <ul
-                                            class="text-center font-SFPro text-lg md:text-2xl lg:text-4xl text-[#1F1F1F] space-y-5"
-                                        >
-                                            <li>Những set Bàn Ăn ấn tượng</li>
-                                            <li
-                                                class="relative z-10 font-Playfair text-2xl md:text-3xl lg:text-5xl text-[#ba9b63] font-[500] tracking-[1px] lg:mb-[26px]"
-                                            >
-                                                Ghế Sofa Tối giản & Cổ điển
-                                            </li>
-                                            <li>Không gian Bếp</li>
-                                            <li>Phòng Khách & Cách bài trí</li>
-                                            <li>Giường ngủ & Tủ đầu giường</li>
-                                            <li>Phòng làm việc</li>
-                                        </ul>
-                                    </div>
-                                    <div class="hidden lg:block self-end mb-10">
-                                        <img
-                                            srcset="./images/products/21.png 2x"
-                                            alt=""
-                                            class="mx-auto lg:ml-auto"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="projects mt-[72px]">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="font-Playfair text-center py-4 mb-[18px]">
-                    <h2>
-                        <span class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Dự án</span
-                        >
-                        <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
-                            Tiêu biểu</span
-                        >
-                    </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects mt-[72px]">
+      <div class="max-w-screen-1xl mx-auto px-4">
+        <div class="font-Playfair text-center py-4 mb-[18px]">
+          <h2>
+            <span
+              class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Dự án</span
+            >
+            <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
+              Tiêu biểu</span
+            >
+          </h2>
+        </div>
+        <div>
+          <div class="swiper project-slides">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="projects-item">
+                  <div>
+                    <img src="./images/posts/1.jpg" alt="" />
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <h3 class="mt-[14px] mb-[7px]">
+                      <a
+                        href=""
+                        class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
+                        >Dự án may đo nội thất mã 002</a
+                      >
+                    </h3>
+                    <p
+                      class="text-[#1F1F1F] font-SFPro text-center lg:text-left"
+                    >
+                      Dành cho phòng khách rộng và to
+                    </p>
+                  </div>
                 </div>
-                <div>
-                    <div class="swiper project-slides">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="projects-item">
-                                    <div>
-                                        <img src="./images/posts/1.jpg" alt="" />
-                                    </div>
-                                    <div class="text-center lg:text-left">
-                                        <h3 class="mt-[14px] mb-[7px]">
-                                            <a
-                                                href=""
-                                                class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
-                                                >Dự án may đo nội thất mã 002</a
-                                            >
-                                        </h3>
-                                        <p
-                                            class="text-[#1F1F1F] font-SFPro text-center lg:text-left"
-                                        >
-                                            Dành cho phòng khách rộng và to
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="projects-item">
-                                    <div>
-                                        <img src="./images/posts/1.jpg" alt="" />
-                                    </div>
-                                    <div class="text-center lg:text-left">
-                                        <h3 class="mt-[14px] mb-[7px]">
-                                            <a
-                                                href=""
-                                                class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
-                                                >Dự án may đo nội thất mã 004</a
-                                            >
-                                        </h3>
-                                        <p class="text-[#1F1F1F] font-SFPro">
-                                            Dành cho phòng khách rộng và to
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="projects-item">
-                                    <div>
-                                        <img src="./images/posts/1.jpg" alt="" />
-                                    </div>
-                                    <div class="text-center lg:text-left">
-                                        <h3 class="mt-[14px] mb-[7px]">
-                                            <a
-                                                href=""
-                                                class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
-                                                >Dự án may đo nội thất mã 113</a
-                                            >
-                                        </h3>
-                                        <p class="text-[#1F1F1F] font-SFPro">
-                                            Yêu cầu của khách hàng với thiết kế đơn giản tông trắng
-                                            và gỗ
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="projects-item">
+                  <div>
+                    <img src="./images/posts/1.jpg" alt="" />
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <h3 class="mt-[14px] mb-[7px]">
+                      <a
+                        href=""
+                        class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
+                        >Dự án may đo nội thất mã 004</a
+                      >
+                    </h3>
+                    <p class="text-[#1F1F1F] font-SFPro">
+                      Dành cho phòng khách rộng và to
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="projects-item">
+                  <div>
+                    <img src="./images/posts/1.jpg" alt="" />
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <h3 class="mt-[14px] mb-[7px]">
+                      <a
+                        href=""
+                        class="text-xl font-bold text-[#1F1F1F] font-berling md:font-SFPro"
+                        >Dự án may đo nội thất mã 113</a
+                      >
+                    </h3>
+                    <p class="text-[#1F1F1F] font-SFPro">
+                      Yêu cầu của khách hàng với thiết kế đơn giản tông trắng và
+                      gỗ
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <!--End .projects-->
-        <section class="baochi mt-[71px]">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="font-Playfair text-center py-4 mb-6">
-                    <h2>
-                        <span class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Báo chí</span
-                        >
-                        <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
-                            Nói về chúng tôi</span
-                        >
-                    </h2>
-                </div>
-                <div>
-                    <div class="flex gap-8 justify-center mx-auto space-x-11 items-center">
-                        <div class="projects-item">
-                            <div>
-                                <img srcset="./images/logos/2560px-Thanh_Niên_logo.png 2x" alt="" />
-                            </div>
-                        </div>
-                        <div class="projects-item">
-                            <div>
-                                <img srcset="./images/logos/VnExpress.png 2x" alt="" />
-                            </div>
-                        </div>
-                        <div class="projects-item">
-                            <div>
-                                <img srcset="./images/logos/Tuổi_Trẻ_Logo.png 2x" alt="" />
-                            </div>
-                        </div>
-                        <div class="projects-item">
-                            <div>
-                                <img
-                                    srcset="./images/logos/1200px-VTC_official_logo.png 2x"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End .projects-->
+    <section class="baochi mt-[71px]">
+      <div class="max-w-screen-1xl mx-auto px-4">
+        <div class="font-Playfair text-center py-4 mb-6">
+          <h2>
+            <span
+              class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Báo chí</span
+            >
+            <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
+              Nói về chúng tôi</span
+            >
+          </h2>
+        </div>
+        <div>
+          <div
+            class="flex gap-8 justify-center mx-auto space-x-11 items-center"
+          >
+            <div class="projects-item">
+              <div>
+                <img
+                  srcset="./images/logos/2560px-Thanh_Niên_logo.png 2x"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>
-        <section class="instagram my-8">
-            <div class="mx-auto px-4 lg:px-8">
-                <div class="font-Playfair text-center py-4 mb-6">
-                    <h2>
-                        <span class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
-                            >Theo dõi chúng tôi trên
-                        </span>
-                        <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
-                            Instagram</span
-                        >
-                    </h2>
-                </div>
-                <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
-                    <div>
-                        <img src="./images/instagram/1.jpg" alt="" class="w-full" />
-                    </div>
-                    <div>
-                        <img src="./images/instagram/2.jpg" alt="" class="w-full" />
-                    </div>
-                    <div>
-                        <img src="./images/instagram/3.jpg" alt="" class="w-full" />
-                    </div>
-                    <div>
-                        <img src="./images/instagram/4.jpg" alt="" class="w-full" />
-                    </div>
-                    <div>
-                        <img src="./images/instagram/5.jpg" alt="" class="w-full" />
-                    </div>
-                    <div>
-                        <img src="./images/instagram/6.jpg" alt="" class="w-full" />
-                    </div>
-                </div>
+            <div class="projects-item">
+              <div>
+                <img srcset="./images/logos/VnExpress.png 2x" alt="" />
+              </div>
             </div>
-        </section>
-        <footer class="bg-[#121F29] text-white py-10">
-            <div class="max-w-screen-1xl mx-auto px-4">
-                <div class="grid lg:grid-cols-12 gap-0">
-                    <div class="lg:col-span-3">
-                        <div class="grid gap-6 grid-flow-col lg:grid-flow-row">
-                            <p class="order-2 lg:order-1">
-                                <strong>IRIS</strong> với sứ mệnh không ngừng mang những
-                                <strong><em>sản phẩm nội thất luxury</em></strong> đang được ưa
-                                chuộng trên thị trường quốc tế về Việt Nam
-                            </p>
-                            <div class="order-1 lg:order-2">
-                                <img src="./images/logo.svg" alt="" style="width: 85px" />
-                            </div>
-                        </div>
+            <div class="projects-item">
+              <div>
+                <img srcset="./images/logos/Tuổi_Trẻ_Logo.png 2x" alt="" />
+              </div>
+            </div>
+            <div class="projects-item">
+              <div>
+                <img
+                  srcset="./images/logos/1200px-VTC_official_logo.png 2x"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="instagram my-8">
+      <div class="mx-auto px-4 lg:px-8">
+        <div class="font-Playfair text-center py-4 mb-6">
+          <h2>
+            <span
+              class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+              >Theo dõi chúng tôi trên
+            </span>
+            <span class="text-[36px] text-[#ba9b63] font-[500] tracking-[1px]">
+              Instagram</span
+            >
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
+          <div>
+            <img src="./images/instagram/1.jpg" alt="" class="w-full" />
+          </div>
+          <div>
+            <img src="./images/instagram/2.jpg" alt="" class="w-full" />
+          </div>
+          <div>
+            <img src="./images/instagram/3.jpg" alt="" class="w-full" />
+          </div>
+          <div>
+            <img src="./images/instagram/4.jpg" alt="" class="w-full" />
+          </div>
+          <div>
+            <img src="./images/instagram/5.jpg" alt="" class="w-full" />
+          </div>
+          <div>
+            <img src="./images/instagram/6.jpg" alt="" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#121F29] text-white">
+      <div class="max-w-screen-1xl mx-auto px-4 pt-12">
+        <div class="grid lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-3">
+            <div class="grid gap-6 grid-flow-col lg:grid-flow-row">
+              <p class="order-2 text-[#888f94] lg:order-1">
+                <strong
+                  class="text-[18px] text-[#ffffff] font-normal tracking-[1px]"
+                  >IRIS</strong
+                >
+                với sứ mệnh không ngừng mang những
+                <strong
+                  class="text-[18px] text-[#ffffff] italic font-normal tracking-[1px]"
+                  ><em>sản phẩm nội thất luxury</em></strong
+                >
+                đang được ưa chuộng trên thị trường quốc tế về Việt Nam
+              </p>
+              <div class="order-1 lg:order-2">
+                <img src="./images/logo.svg" alt="" style="width: 85px" />
+              </div>
+            </div>
 
-                        <div class="my-3 flex space-x-4 justify-center lg:justify-start">
-                            <a href=""><img src="./images/socials/Facebook.svg" /></a>
-                            <a href=""><img src="./images/socials/instagram.svg" /></a>
-                            <a href=""><img src="./images/socials/twitter.svg" /></a>
-                            <a href=""><img src="./images/socials/youtube.svg" /></a>
-                            <a href=""><img src="./images/socials/behance.svg" /></a>
-                            <a href=""><img src="./images/socials/dribbble.svg" /></a>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5 lg:col-start-5 grid grid-cols-3 gap-4 lg:pr-5¡">
-                        <div>
-                            <div><h2 class="font-berling">NỘI THẤT</h2></div>
-                            <ul class="text-sm flex flex-col space-y-2 mt-3">
-                                <li><a href="" class="hover:underline">Sản phẩm</a></li>
-                                <li><a href="" class="hover:underline">Phòng</a></li>
-                                <li><a href="" class="hover:underline">Bộ sưu tập</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div><h2 class="font-berling">GIỚI THIỆU</h2></div>
-                            <ul class="text-sm flex flex-col space-y-2 mt-3">
-                                <li><a href="" class="hover:underline">Về chúng tôi</a></li>
-                                <li><a href="" class="hover:underline">Liên hệ</a></li>
-                                <li><a href="" class="hover:underline">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div><h2 class="font-berling">HỖ TRỢ</h2></div>
-                            <ul class="text-sm flex flex-col space-y-2 mt-3">
-                                <li>
-                                    <a href="" class="hover:underline">Đặt hàng & Thanh toán</a>
-                                </li>
-                                <li>
-                                    <a href="" class="hover:underline">Vận chuyển & Giao hàng</a>
-                                </li>
-                                <li><a href="" class="hover:underline">Dịch vụ bảo hành</a></li>
-                                <li><a href="" class="hover:underline">Các chính sách</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3">
-                        <h2 class="font-berling">ĐĂNG KÝ</h2>
-                        <p class="text-[14px]">
-                            Đăng ký email để nhận thông tin khuyến mãi từ chúng tôi
-                        </p>
-                        <form action="" class="border-b border-gray-100 pb-3 mt-2">
-                            <input type="text" placeholder="Email của bạn" class="bg-transparent" />
-                            <button>Submit</button>
-                        </form>
-                        <p>090 486 3155 | CSKH: 097 250 6486</p>
-                        <p><img src="./images/icons/email.svg" />info@iris-furniture.com</p>
-                    </div>
-                </div>
+            <div
+              class="my-8 flex justify-center lg:gap-6 gap-9 lg:justify-start"
+            >
+              <a href=""><img src="./images/socials/Facebook.svg" /></a>
+              <a href=""><img src="./images/socials/instagram.svg" /></a>
+              <a href=""><img src="./images/socials/twitter.svg" /></a>
+              <a href=""><img src="./images/socials/youtube.svg" /></a>
+              <a href=""><img src="./images/socials/behance.svg" /></a>
+              <a href=""><img src="./images/socials/dribbble.svg" /></a>
             </div>
-            <div class="border-t border-[#BA9B63] pt-5">
-                <div class="max-w-screen-1xl mx-auto px-4">
-                    <div class="flex items-center">
-                        <p class="mb-0 flex-1">© 2023 Bản quyền thuộc về Nội thất IRIS</p>
-                        <div class="flex-1 text-center">
-                            <a href="">Cookie Information</a>
-                            <a href=""> | Legal & Privacy</a>
-                            <a href=""> | Terms & Conditions</a>
-                        </div>
-                        <div class="flex-1">
-                            <img srcset="./images/icons/payment.png 2x" alt="" class="ml-auto" />
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div
+            class="lg:col-span-5 lg:col-start-5 grid grid-cols-3 gap-4 lg:pr-5¡"
+          >
+            <div>
+              <div><h2 class="font-berling">NỘI THẤT</h2></div>
+              <ul class="text-sm flex flex-col space-y-3 mt-3">
+                <li><a href="" class="hover:underline">Sản phẩm</a></li>
+                <li><a href="" class="hover:underline">Phòng</a></li>
+                <li><a href="" class="hover:underline">Bộ sưu tập</a></li>
+              </ul>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="./main.js"></script>
-    </body>
+            <div>
+              <div><h2 class="font-berling">GIỚI THIỆU</h2></div>
+              <ul class="text-sm flex flex-col space-y-3 mt-3">
+                <li><a href="" class="hover:underline">Về chúng tôi</a></li>
+                <li><a href="" class="hover:underline">Liên hệ</a></li>
+                <li><a href="" class="hover:underline">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <div><h2 class="font-berling">HỖ TRỢ</h2></div>
+              <ul class="text-sm flex flex-col space-y-3 mt-3">
+                <li>
+                  <a href="" class="hover:underline">Đặt hàng & Thanh toán</a>
+                </li>
+                <li>
+                  <a href="" class="hover:underline">Vận chuyển & Giao hàng</a>
+                </li>
+                <li><a href="" class="hover:underline">Dịch vụ bảo hành</a></li>
+                <li><a href="" class="hover:underline">Các chính sách</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 space-y-2">
+            <h2 class="font-berling">ĐĂNG KÝ</h2>
+            <p class="text-[14px]">
+              Đăng ký email để nhận thông tin khuyến mãi từ chúng tôi
+            </p>
+            <div class="space-y-5">
+              <form
+                class="flex justify-between items-center border-b-2 border-[#434e58] hover:border-[#ba9b63] transition duration-300 focus:mb-1"
+                action=""
+              >
+                <input
+                  class="py-2 text-[#434e58] text-[14px] bg-[#121f29] focus:outline-none focus:text-[#ba9b63] transition duration-300"
+                  type="text"
+                  placeholder="Email của bạn"
+                />
+                <button
+                  class="transition ease-in-out delay-150 hover:-translate-x-[-5px] hover:scale-110 duration-300"
+                >
+                  <img
+                    class="w-[12px] h-auto object-cover"
+                    srcset="./images/icons/vector.png 2x"
+                    alt=""
+                  />
+                </button>
+              </form>
+              <div class="flex flex-col space-y-1">
+                <div class="flex justify-start items-center gap-1">
+                  <img src="./images/icons/telephone 1.png" alt="" />
+                  <a
+                    class="text-[#fffff] text-[12px] font-SFPro tracking-[0.7px] hover:underline"
+                    href=""
+                    >090 486 3155</a
+                  >
+                  |
+                  <span
+                    class="text-[#fffff] text-[12px] font-SFPro tracking-[0.7px] hover:underline"
+                  >
+                    CSHK :
+                  </span>
+                  <a
+                    class="text-[#fffff] text-[12px] font-SFPro tracking-[0.7px] hover:underline"
+                    href=""
+                    >090 486 3155</a
+                  >
+                </div>
+                <div class="flex justify-start items-center gap-1">
+                  <img src="./images/icons/email 1.png" alt="" />
+                  <a
+                    class="text-[#fffff] text-[12px] font-SFPro tracking-[0.7px] hover:underline"
+                    href=""
+                    >info@iris-furniture.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t-[1px] py-5 border-[#3c3e37]">
+        <div class="max-w-screen-1xl mx-auto px-4">
+          <div class="lg:flex lg:items-center lg:flex-wrap">
+            <p class="mb-2 lg:mb-0 lg:flex-1 text-white text-[12px] uppercase">
+              © 2023 Bản quyền thuộc về Nội thất IRIS
+            </p>
+            <div
+              class="text-white text-[12px] tracking-wider text-center lg:flex-1 lg:text-center"
+            >
+              <a href="">Cookie Information</a>
+              <a href=""> | Legal & Privacy</a>
+              <a href=""> | Terms & Conditions</a>
+            </div>
+            <div class="lg:flex-1 flex justify-center">
+              <img
+                class="lg:ml-auto"
+                srcset="./images/icons/payment.png 2x"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
