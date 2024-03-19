@@ -56,7 +56,7 @@ body {
 }
 /* FEATURE CATEGORY */
 .feature-category__name {
-  @apply text-[#1f1f1f] text-[16px] font-normal text-center uppercase mt-[6px];
+  @apply text-[#1f1f1f] text-[16px] font-normal text-center uppercase mt-[11px];
 }
 .room-space-tabs__link {
   @apply font-SFPro text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1;
@@ -109,4 +109,32 @@ body {
   width: 60px;
   height: 70px;
   text-indent: -99999999px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"]::-webkit-slider-thumb {
+    width: 24px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 24px;
+    cursor: ew-resize;
+    background: #ffff;
+    box-shadow: -405px 0 0 400px #ba9b63;
+    border-radius: 50%;
+  }
+}
+
+/* input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
 }

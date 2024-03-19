@@ -27,24 +27,26 @@
     <div class="bg-[#ba9b63] px-4">
       <div class="tw-container-fluid">
         <div class="flex justify-between items-center text-white py-3 lg:py-2">
-          <div class="flex-1 text-sm hidden lg:flex items-center space-x-1">
+          <div class="flex-1 text-xs hidden lg:flex items-center space-x-1">
             <img src="./images/icons/phone.svg" /> <span>090 486 3155</span>
           </div>
           <p
-            class="flex-1 text-center text-[10px] lg:text-[12px] m-0 uppercase tracking-[2px]"
+            class="flex-1 text-center text-sm lg:text-[12px] m-0 uppercase tracking-[2px]"
           >
             MIỄN PHÍ GIAO HÀNG VỚI ĐƠN TỪ 3.000.000 VNĐ
           </p>
-          <div class="lighthouse__lang flex-1 text-right hidden lg:block">
+          <div
+            class="lighthouse__lang flex-1 text-xs text-right hidden lg:block"
+          >
             <span>Tiếng Việt</span>
           </div>
         </div>
       </div>
     </div>
     <nav class="md:absolute top-[50px] z-10 w-full py-2">
-      <div class="max-w-screen-1xl mx-auto px-4">
+      <div class="max-w-screen-1xl mx-auto px-4 lg:pl-4 lg:pr-0">
         <div class="flex justify-between">
-          <ul class="flex-1 hidden lg:flex items-center space-x-4 text-white">
+          <ul class="flex-1 hidden lg:flex items-center space-x-6 text-white">
             <li class="nav-item">
               <a class="nav-link text-sm" href="products-page.html">Sản phẩm</a>
             </li>
@@ -109,23 +111,25 @@
         />
         <div class="banner__content">
           <h2
-            class="banner__title -tracking-[2px] leading-[33px] text-[36px] lg:text-[128px] lg:leading-[114px] lg:-tracking-[7px]"
+            class="banner__title -tracking-[2px] leading-[33px] text-[36px] lg:text-[128px] lg:leading-[114px] lg:-tracking-[7px] mb-6"
           >
             Bring your <br />modern design <br />FUNITURES
           </h2>
-          <a
-            href=""
-            class="text-white no-underline uppercase font-bold text-[10px] lg:text-[14px] font-SFPro tracking-[0.7px] mt-[5px]"
-          >
-            get started
-          </a>
+          <div>
+            <a
+              href=""
+              class="text-white no-underline uppercase font-bold text-[10px] lg:text-[14px] font-SFPro tracking-[1px] mt-[5px]"
+            >
+              get started
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!--End .banner-->
-    <section class="feature-category lg:mt-[80px]">
+    <section class="feature-category lg:mt-[95px]">
       <div class="max-w-screen-1xl mx-auto px-4">
-        <div class="font-Playfair text-center pt-5 pb-3 lg:py-4 mb-1">
+        <div class="font-Playfair text-center pt-5 pb-3 lg:py-4 mb-[10px]">
           <h2>
             <span
               class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
@@ -218,63 +222,48 @@
       </div>
     </section>
     <!--End .feature-category-->
-    <section class="room-space mt-12 lg:mt-[65px]">
-      <div class="font-Playfair text-center py-4">
-        <h2 class="mb-4 lg:mb-7">
+    <section class="room-space mt-12 lg:mt-[63px]">
+      <div
+        class="font-Playfair text-center py-4 border-b-[1px] border-[#ba9b63]"
+      >
+        <h2 class="mb-8">
           <span
-            class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
+            class="text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
             >Không gian phòng</span
           >
-          <span
-            class="text-xl lg:text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
+          <span class="text-[36px] text-[#ba9b63] font-semibold tracking-[1px]"
             >nội thất</span
           >
         </h2>
-        <div class="overflow-hidden">
-          <ul
-            id="room-space-tabs"
-            class="nav room-space-tab flex justify-start space-x-4 overflow-auto whitespace-nowrap pb-7 pl-2 lg:pl-0 lg:justify-center lg:space-x-11"
-          >
-            <li class="nav-item room-space-tabs__item">
-              <a
-                class="font-SFPro lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63] active"
-                aria-current="page"
-                data-id="tab1"
-                >Phòng Khách</a
-              >
-            </li>
-            <li class="nav-item room-space-tabs__item">
-              <a
-                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                data-id="tab2"
-                >Phòng Bếp</a
-              >
-            </li>
-            <li class="nav-item room-space-tabs__item">
-              <a
-                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                data-id="tab3"
-                >Phòng Ngủ</a
-              >
-            </li>
-            <li class="nav-item room-space-tabs__item">
-              <a
-                class="font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                data-id="tab4"
-                >Phòng Làm Việc</a
-              >
-            </li>
-            <li class="nav-item room-space-tabs__item">
-              <a
-                class="nav-link font-SFPro text-[14px] lg:text-[20px] font-semibold text-[#1f1f1f] cursor-pointer uppercase py-5 px-1 hover:text-[#ba9b63]"
-                data-id="tab5"
-                >Không Gian Khác</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul
+          id="room-space-tabs"
+          class="nav room-space-tab flex justify-center space-x-10"
+        >
+          <li class="nav-item room-space-tabs__item">
+            <a
+              class="room-space-tabs__link active"
+              aria-current="page"
+              data-id="tab1"
+              >Phòng Khách</a
+            >
+          </li>
+          <li class="nav-item room-space-tabs__item">
+            <a class="room-space-tabs__link" data-id="tab2">Phòng Bếp</a>
+          </li>
+          <li class="nav-item room-space-tabs__item">
+            <a class="room-space-tabs__link" data-id="tab3">Phòng Ngủ</a>
+          </li>
+          <li class="nav-item room-space-tabs__item">
+            <a class="room-space-tabs__link" data-id="tab4">Phòng Làm Việc</a>
+          </li>
+          <li class="nav-item room-space-tabs__item">
+            <a class="nav-link room-space-tabs__link" data-id="tab5"
+              >Không Gian Khác</a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="section-body">
+      <div class="section-body mt-6">
         <div class="room-space-tab-content mb-6">
           <div class="tab-content" data-tab-id="tab1">
             <div class="swiper room-space-slide">
@@ -313,12 +302,13 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide lg:h-[740px]">
               <div
-                class="pt-12 lg:pt-[94px] md:max-w-[490px] px-8 lg:px-5 mx-auto"
+                class="pt-12 font-medium lg:pt-[94px] md:max-w-[490px] px-8 lg:px-5 mx-auto"
               >
                 <h2
                   class="font-berling text-2xl lg:text-[36px] text-[#1f1f1f] italic text-center leading-none"
                 >
-                  Bộ bàn ăn <span class="text-white">Sunny Table</span>
+                  Bộ bàn ăn
+                  <span class="lg:text-[36px] text-white">Sunny Table</span>
                 </h2>
                 <h3
                   class="font-berling text-2xl lg:text-[28px] text-[#1f1f1f] italic text-center"
@@ -326,7 +316,7 @@
                   Tinh tế đến từ phong cách cổ điển
                 </h3>
                 <p
-                  class="mt-1 mb-6 lg:mt-3 lg:mb-5 leading-tight text-[14px] lg:text-[16px]"
+                  class="mt-1 mb-6 lg:mt-6 lg:mb-5 leading-tight text-[14px] lg:text-[16px]"
                 >
                   Sunny Table là sự kết hợp hài hòa giữa hình thức và chức năng.
                   Tựa lưng cong nâng niu điểm chạm từ các phía, bề mặt ngồi
@@ -344,7 +334,7 @@
                 <img
                   srcset="./images/products/7.png 2x"
                   alt=""
-                  class="mx-auto"
+                  class="mt-14 mx-auto"
                 />
               </div>
             </div>
@@ -386,7 +376,7 @@
         </div>
       </div>
     </section>
-    <section class="best-selling mt-[60px] lg:mt-[74px]">
+    <section class="best-selling mt-[60px] lg:mt-[87px]">
       <div class="max-w-screen-1xl mx-auto px-4">
         <div class="font-Playfair text-center py-4">
           <h2 class="mb-4">
@@ -404,10 +394,12 @@
           <div class="swiper best-selling-slide pb-8 mb-5 hidden md:block">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-14">
                   <div class="product-item text-center">
                     <img srcset="./images/products/12.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[15px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -417,7 +409,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -428,7 +420,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/13.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -438,7 +432,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -449,7 +443,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/14.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -459,7 +455,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -470,7 +466,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/12.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -480,7 +478,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -491,7 +489,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/16.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -501,7 +501,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -512,7 +512,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/17.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -522,7 +524,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -533,7 +535,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/18.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -543,7 +547,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -554,7 +558,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/19.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -564,7 +570,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -579,7 +585,9 @@
                 <div class="grid grid-cols-4 gap-8">
                   <div class="product-item text-center">
                     <img src="./images/products/12.png" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -589,7 +597,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -600,7 +608,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img src="./images/products/12.png" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -610,7 +620,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -621,7 +631,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img src="./images/products/12.png" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -631,7 +643,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -642,7 +654,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img src="./images/products/12.png" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -652,7 +666,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -672,7 +686,9 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div class="product-item text-center">
                     <img srcset="./images/products/12.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -682,7 +698,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -693,7 +709,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/13.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -703,7 +721,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -714,7 +732,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/14.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -724,7 +744,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -735,7 +755,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/12.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -745,7 +767,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -760,7 +782,9 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div class="product-item text-center">
                     <img srcset="./images/products/16.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -770,7 +794,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -781,7 +805,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/17.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -791,7 +817,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -802,7 +828,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/18.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -812,7 +840,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -823,7 +851,9 @@
                   </div>
                   <div class="product-item text-center">
                     <img srcset="./images/products/19.png 2x" />
-                    <h3 class="font-SFPro text-sm uppercase text-[#1F1F1F]">
+                    <h3
+                      class="font-SFPro text-sm uppercase text-[#1F1F1F] mt-[14px]"
+                    >
                       <a href="">Ghế ăn cao cấp Matt</a>
                     </h3>
                     <div class="mt-2 flex space-x-4 justify-center">
@@ -833,7 +863,7 @@
                       >
                     </div>
                     <div
-                      class="flex justify-center items-center space-x-1.5 mt-3"
+                      class="flex justify-center items-center space-x-1.5 mt-2"
                     >
                       <div class="attribute-item bg-[#BC8A40]"></div>
                       <div class="attribute-item bg-[#C5B7A3]"></div>
@@ -913,7 +943,7 @@
         <img src="./images/banner3.jpg" alt="" class="h-[230px] lg:h-[860px]" />
       </div>
       <h2
-        class="banner__title absolute left-1/2 -bottom-[6px] xl:-bottom-[60px] -translate-x-1/2 text-6xl md:text-9xl xl:text-10xl xl:leading-[240px] w-full"
+        class="banner__title absolute left-1/2 -bottom-[6px] xl:-bottom-[48px] -translate-x-1/2 text-8xl md:text-10xl xl:text-10xl xl:leading-[240px] w-full"
       >
         YOUR HOME
       </h2>
@@ -925,17 +955,17 @@
       </button>
     </section>
     <section
-      class="trending bg-[#F9F5F0] pt-[12px] pb-10 lg:pt-[45px] lg:h-[940px] lg:pb-0"
+      class="trending bg-[#F9F5F0] pt-[12px] pb-10 lg:pt-[58px] lg:h-[940px] lg:pb-0"
     >
       <div class="mx-auto px-4 lg:px-20">
         <div class="font-Playfair text-center py-4">
-          <h2 class="mb-[5px]">
+          <h2 class="mb-[13px]">
             <span
               class="text-xl lg:text-[36px] text-[#1f1f1f] italic font-light tracking-[1px]"
               >Xu hướng</span
             >
             <span
-              class="text-xl lg:text-[36px] text-[#ba9b63] font-[500] tracking-[1px]"
+              class="text-xl lg:text-[37px] text-[#ba9b63] font-[500] tracking-[1px]"
             >
               Thế giới</span
             >
@@ -1084,10 +1114,7 @@
           >
             <div class="projects-item">
               <div>
-                <img
-                  srcset="./images/logos/2560px-Thanh_Niên_logo.png 2x"
-                  alt=""
-                />
+                <img srcset="./images/logos/thanhnien.png 2x" alt="" />
               </div>
             </div>
             <div class="projects-item">
@@ -1097,15 +1124,12 @@
             </div>
             <div class="projects-item">
               <div>
-                <img srcset="./images/logos/Tuổi_Trẻ_Logo.png 2x" alt="" />
+                <img srcset="./images/logos/tuoi-tre.png 2x" alt="" />
               </div>
             </div>
             <div class="projects-item">
               <div>
-                <img
-                  srcset="./images/logos/1200px-VTC_official_logo.png 2x"
-                  alt=""
-                />
+                <img srcset="./images/logos/vtc.png 2x" alt="" />
               </div>
             </div>
           </div>
@@ -1125,7 +1149,7 @@
             >
           </h2>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-2">
           <div>
             <img src="./images/instagram/1.jpg" alt="" class="w-full" />
           </div>
